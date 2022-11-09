@@ -1,0 +1,54 @@
+<div class="row">
+  <div class="col-xs-12">
+    <h3 style="margin-left: 20px" (click)="updateNums()">Шалтери</h3>
+  </div>
+</div>
+<hr />
+<div class="container">
+  <div class="row">
+    <div class="col-xs-7">
+      <div class="shalter">
+        <div style="display: inline-block">
+          <h4>Шалтер 1</h4>
+          <h5>Услуга: Плаќање сметки</h5>
+        </div>
+        <div class="shalterEl">
+          <h5>
+            Активен број:
+            <span class="activeNum">{{ shalter1CurrNum }}</span>
+          </h5>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="shalter">
+        <div style="display: inline-block">
+          <h4>Шалтер 2</h4>
+          <h5>Услуга: Подигање кредит</h5>
+        </div>
+        <div class="shalterEl">
+          <h5>
+            Активен број:
+            <span class="activeNum">{{ shalter2CurrNum }}</span>
+          </h5>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="shalter">
+        <div style="display: inline-block">
+          <h4>Шалтер 3</h4>
+          <h5>Услуга: Состојба на налози</h5>
+        </div>
+        <div class="shalterEl">
+          <h5>
+            Активен број:
+            <span class="activeNum">{{ shalter3CurrNum }}</span>
+          </h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

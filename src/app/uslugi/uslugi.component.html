@@ -1,0 +1,24 @@
+<div class="row">
+  <div class="col-xs-12">
+    <h3 style="margin-left: 20px">Услуги</h3>
+  </div>
+</div>
+<hr />
+<div class="container">
+  <div class="row">
+    <div class="col-xs-5">
+      <app-uslugi-item
+        *ngFor="let uslugiEl of uslugi; let i = index"
+        [uslugi]="uslugiEl"
+        [index]="i"
+        (click)="updateNum()"
+      ></app-uslugi-item>
+    </div>
+    <div class="col-xs-6">
+      <h4>
+        Вашиот број е:
+        <span class="activeNum" *ngIf="num">{{ num }}</span>
+      </h4>
+    </div>
+  </div>
+</div>

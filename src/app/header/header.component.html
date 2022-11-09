@@ -1,0 +1,21 @@
+<nav class="navbar navbar-default navbar-expand-lg">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a href="" class="navbar-brand">Земи Бројче</a>
+    </div>
+
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li routerLinkActive="active" *ngIf="!userView">
+          <a routerLink="/uslugi" (click)="userViewUpdate()">Услуги</a>
+        </li>
+        <li routerLinkActive="active" *ngIf="userView">
+          <a routerLink="/shalteri">Активни Шалтери</a>
+        </li>
+        <li routerLinkActive="active" *ngIf="userView">
+          <a routerLink="/status">Моментален Статус</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

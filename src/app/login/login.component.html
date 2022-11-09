@@ -1,0 +1,36 @@
+<div class="row">
+  <div class="col-xs-12 col-md-6 col-md-offset-3">
+    <ng-template appPlaceholder></ng-template>
+
+    <form>
+      <div class="form-group">
+        <label for="email">E-пошта</label>
+        <input
+          type="email"
+          id="email"
+          class="form-control"
+          ngModel
+          name="email"
+          required
+          email
+        />
+      </div>
+      <!--  -->
+      <div class="form-group">
+        <label for="password">Лозинка</label>
+        <input
+          type="password"
+          id="password"
+          class="form-control"
+          ngModel
+          name="password"
+          required
+          minlength="6"
+        />
+      </div>
+      <div>
+        <button class="btn btn-info" type="submit">Најави се</button>
+      </div>
+    </form>
+  </div>
+</div>

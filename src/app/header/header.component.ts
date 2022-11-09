@@ -1,14 +1,13 @@
-import { Component } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  selector: 'app-header',
+  templateUrl: './header.component.html',
+  styleUrls: ['./header.component.css'],
 })
-export class AppComponent {
-  title = 'Zemi_Brojche';
-  userView = false;
+export class HeaderComponent implements OnInit {
+  userView = true;
   currentRoute: string;
 
   constructor(private route: ActivatedRoute, private router: Router) {}
@@ -21,7 +20,7 @@ export class AppComponent {
     this.router.events.subscribe((value) => {
       // console.log('current route: ', this.router.url.toString());
       if (this.router.url.toString() == '/uslugi') {
-        this.userView = true;
+        this.userView = false;
       }
     });
   }

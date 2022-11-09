@@ -1,0 +1,7 @@
+.activeNum {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: rgb(78, 202, 227);
+  text-align: center;
+}
